@@ -15,8 +15,9 @@ Proyek ini sudah menggunakan Vite untuk manajemen aset frontend (CSS/JS).
 - UI dengan Tailwind CSS
 
 🛠️ Teknologi
-- Laravel 11
-- PHP 8.2+
-- MySQL / MariaDB
+- Laravel 12
+- PHP 8.3+
+- MySQL
 - TailwindCSS
 - Vite
+- Javascript
