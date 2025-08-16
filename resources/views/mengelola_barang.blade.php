@@ -34,34 +34,19 @@
 </head>
 
 <body>
-    <header class="mb-8">
-        <div class="flex justify-between bg-[#adff2f] h-17 items-center text-center">
-            <div class="logos mx-5 text-black flex gap-3 cursor-default">
-                <img src="/img/icon.png" alt="Logo" width="30px">
-                <h3 style="text-sm/6 font-semibold ml-6">Inven<span class="text-[#fff] text-2xl font-bold text-neue">Barang</span> </h3>
-            </div>
-            <div>
-                <h1 class="text-2xl font-bold">Pengelolaan Barang</h1>
-            </div>
-            <div class="logout mx-5 ">
-                <form id="logout-form" action="/logout" method="POST">
-                    @csrf
-                    <button
-                        class="text-sm/6 border-transparent border-4 bg-red-600 cursor-pointer text-white border-solid hover:border-red-600 px-5 py-1 rounded-md hover:bg-transparent hover:text-red-600 transition-all duration-100 delay-75 ease-in-out">Logout</button>
-                </form>
-            </div>
-        </div>
-    </header>
+    <x-header>
+        Manage Goods
+    </x-header>
 
-    <main>
-        <div class="mx-2">
+    <main class="my-10">
+        <div class="mx-2 my-6">
             <a href="/tambah-barang"
                 class="bg-green-600 border-4 border-transparent p-1.5 mx-3 w-1/7 rounded-md text-white px-6 py-2 shadow-[4px_4px_0_#000] hover:text-green-600 hover:border-green-600 hover:bg-transparent delay-75 duration-100 ease-in-out "><i
-                    class="bi bi-plus-lg transition delay-75 duration-100 ease-in-out hover:scale-90"></i> Tambah
-                Barang</a>
+                    class="bi bi-plus-lg transition delay-75 duration-100 ease-in-out hover:scale-90"></i> Add
+                Item</a>
             <a href="/"
                 class="border-gray-600 border border-solid p-1.5 mx-3 w-1/7 rounded-md text-gray-600 px-6 py-2 hover:bg-gray-600 hover:text-white transition delay-75 duration-100 ease-in-out"><i
-                    class="bi bi-arrow-left"></i> Kembali</a>
+                    class="bi bi-arrow-left"></i> Back</a>
         </div>
 
 
@@ -71,11 +56,11 @@
                     <thead class="bg-[#a6ff00] border-b-4 border-black">
                         <tr>
                             <th class="px-4 py-3 border-r-4 border-black text-black text-lg font-extrabold">No</th>
-                            <th class="px-4 py-3 border-r-4 border-black text-black text-lg font-extrabold">Nama</th>
-                            <th class="px-4 py-3 border-r-4 border-black text-black text-lg font-extrabold">Jumlah</th>
-                            <th class="px-4 py-3 border-r-4 border-black text-black text-lg font-extrabold">Tipe</th>
-                            <th class="px-4 py-3 border-r-4 border-black text-black text-lg font-extrabold">Gambar</th>
-                            <th class="px-4 py-3 text-black text-lg font-extrabold">Aksi</th>
+                            <th class="px-4 py-3 border-r-4 border-black text-black text-lg font-extrabold">Name</th>
+                            <th class="px-4 py-3 border-r-4 border-black text-black text-lg font-extrabold">Quantity</th>
+                            <th class="px-4 py-3 border-r-4 border-black text-black text-lg font-extrabold">Type</th>
+                            <th class="px-4 py-3 border-r-4 border-black text-black text-lg font-extrabold">Image</th>
+                            <th class="px-4 py-3 text-black text-lg font-extrabold">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -97,7 +82,7 @@
                                 </button>
                                 <button
                                     class="px-4 py-2 bg-red-500 rounded-lg text-white border-4 border-transparent shadow-[4px_4px_0_0_#000] hover:text-red-500 hover:border-red-500 hover:bg-transparent transition delay-75 duration-100 ease-in-out">
-                                    Hapus
+                                    Delete
                                 </button>
                             </td>
                         </tr>

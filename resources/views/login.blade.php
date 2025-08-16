@@ -45,13 +45,13 @@
                 @endif
 
                 @if (session('success'))
-                    <div class="bg-lime-500 text-center w-1/2 text-white rounded-lg mx-auto">
+                    <div class="bg-green-800 text-center w-1/2 text-white rounded-lg mx-auto">
                         {{ session('success') }}
                     </div>
                 @endif
 
                 @if (session('sukses'))
-                    <div class="bg-lime-500 text-center w-1/2 text-white rounded-lg mx-auto">
+                    <div class="bg-green-800 text-center w-1/2 text-white rounded-lg mx-auto">
                         {{ session('sukses') }}
                     </div>
                 @endif
@@ -79,7 +79,7 @@
 
             <div class="flex gap-5 mt-5 items-center">
                 <button type="submit"
-                    class="bg-[#000] p-1.5 mx-3 cursor-pointer w-1/3 border-4 border-transparent text-white transition delay-75 duration-100 ease-in-out active:scale-95 hover:bg-[#fff] hover:text-[#000] hover:border-[#000]">Login</button>
+                    class="bg-[#000] p-1.5 mx-3 rounded-lg cursor-pointer w-1/3 border-4 border-transparent text-white transition delay-75 duration-100 ease-in-out active:scale-95 hover:bg-[#fff] hover:text-[#000] hover:border-[#000]">Login</button>
                 <p class="cursor-default">
                     Belum punya akun?
                     <a href="{{ route('register') }}"

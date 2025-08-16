@@ -19,7 +19,7 @@
 
         @font-face {
             font-family: 'NeueFont';
-            src: url('/font/BebasNeue.ttf') format('truetype');
+            src: url('/font/BebasNeue-Regular.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -46,30 +46,14 @@
 </head>
 
 <body>
-    <header>
-        <div class="flex justify-between bg-[#adff2f] h-17 items-center text-center">
-            <div class="logos mx-5 text-black flex gap-3 cursor-default items-center">
-                <img src="/img/warehouse.png" alt="Logo" width="40px">
-                <h3 style="text-sm/6 font-semibold ml-6">Inven<span
-                        class="text-[#fff] text-2xl font-bold text-neue">Goods</span> </h3>
-            </div>
-            <div>
-                <h1 class="text-2xl font-bold">Dashboard</h1>
-            </div>
-            <div class="logout mx-5 ">
-                <form id="logout-form" action="/logout" method="POST">
-                    @csrf
-                    <button
-                        class="text-sm/6 border-transparent border-4 bg-red-600 cursor-pointer text-white border-solid hover:border-red-600 px-5 py-1 rounded-md hover:bg-transparent hover:text-red-600 transition-all duration-100 delay-75 ease-in-out">Logout</button>
-                </form>
-            </div>
-        </div>
-    </header>
+    <x-header>
+        Dashboard
+    </x-header>
 
     <main>
-        <div class="flex gap-4 items-center">
+        <div class="flex gap-4 items-center mt-6">
             <img src="/img/mascot.png" alt="Mascot" width="100px">
-            <p id="greeting" class="text-sm text-black text-center mb-4 bg-[#a6ff00] p-4 rounded-lg"></p>
+            <p id="greeting" class="cursor-default shadow-[8px_8px_0_#000] border-4 border-black text-sm text-black text-center mb-4 bg-[#a6ff00] p-4 rounded-lg"></p>
         </div>
         
 
@@ -102,7 +86,7 @@
             </div>
             <div
                 class="border-4 flex flex-col h-[200px] justify-center shadow-[8px_8px_0_#000] border-black bg-[#a6ff00] rounded-lg transition delay-75 duration-100 ease-in-out hover:-translate-y-3">
-                <a href="/pengembalian-barang" class="flex justify-center items-center h-full p-4">
+                <a href="/laporan-barang" class="flex justify-center items-center h-full p-4">
                     <div class="text-black flex flex-col gap-10">
                         <h4><span class="bg-[#fff] inline py-1">Return of Goods</span></h4>
                         <div class="flex">
@@ -110,7 +94,7 @@
                             <p class="text-sm/6">Return <br> Now</p>
                         </div>
                     </div>
-                    <img src="/img/return.png" alt="pengembalian barang" width="80px">
+                    <img src="/img/return.png" alt="laporan barang" width="80px">
                 </a>
             </div>
             <div

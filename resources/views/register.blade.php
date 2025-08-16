@@ -84,7 +84,7 @@
 
             <div class="flex gap-5 mt-5 items-center">
                 <button type="submit"
-                    class="bg-[#000] p-1.5 mx-3 cursor-pointer w-1/3 border-4 border-transparent text-white transition delay-75 duration-100 ease-in-out active:scale-95 hover:bg-[#fff] hover:text-[#000] hover:border-[#000]">Register</button>
+                    class="bg-[#000] p-2 mx-3 rounded-lg cursor-pointer w-1/3 border-4 border-transparent text-white transition delay-75 duration-100 ease-in-out active:scale-95 hover:bg-[#fff] hover:text-[#000] hover:border-[#000]">Register</button>
                 <p class="cursor-default">
                     Already have an account?
                     <a href="{{ route('login') }}" class="text-blue-700 hover:underline hover:text-blue-500">Login</a>
