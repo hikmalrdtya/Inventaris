@@ -1,6 +1,6 @@
 <div>
     <header>
-        <div class="flex justify-between bg-[#adff2f] h-17 items-center text-center">
+        <div class="flex justify-between bg-[#adff2f] h-20 items-center text-center cursor-default">
             <div class="logos mx-5 text-black flex gap-3 cursor-default items-center">
                 <img src="/img/warehouse.png" alt="Logo" width="40px">
                 <h3 style="text-sm/6 font-semibold ml-6">Inven<span

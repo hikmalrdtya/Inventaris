@@ -37,6 +37,38 @@
             animation: blink .9s steps(1) infinite;
         }
 
+        .chat-bubble {
+            position: relative;
+        }
+
+        .chat-bubble::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -16px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-right: 16px solid black;
+            z-index: 0;
+        }
+
+        .chat-bubble::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 14px solid #a6ff00;
+            z-index: 1;
+        }
+
         @keyframes blink {
             50% {
                 opacity: 0;
@@ -53,9 +85,13 @@
     <main>
         <div class="flex gap-4 items-center mt-6">
             <img src="/img/mascot.png" alt="Mascot" width="100px">
-            <p id="greeting" class="cursor-default shadow-[8px_8px_0_#000] border-4 border-black text-sm text-black text-center mb-4 bg-[#a6ff00] p-4 rounded-lg"></p>
+            <div id="bubble-container" class="relative chat-bubble">
+                <p id="greeting"
+                    class="cursor-pointer shadow-[8px_8px_0_#000] border-4 border-black text-sm text-black text-center mb-4 bg-[#a6ff00] p-4 rounded-lg">
+                </p>
+            </div>
         </div>
-        
+
 
         <div class="card grid grid-cols-2 w-[60%] gap-10 mx-auto my-[3rem] text-white">
             <div
