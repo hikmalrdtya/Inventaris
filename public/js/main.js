@@ -125,3 +125,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
     runInitial();
 });
+
+// Modal
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Ambil semua elemen yang diperlukan
+    const openModalBtn = document.getElementById('open-modal-btn'); // Ganti dengan ID tombol 'Add Item' Anda
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const backBtnModal = document.getElementById('back-btn-modal');
+    const modalOverlay = document.getElementById('modal-overlay');
+    
+    // Fungsi untuk membuka modal
+    const openModal = () => {
+        if (modalOverlay) {
+            modalOverlay.classList.remove('hidden');
+            // Gunakan 'flex' karena wrapper kita menggunakan flexbox untuk centering
+            modalOverlay.classList.add('flex'); 
+        }
+    };
+
+    // Fungsi untuk menutup modal
+    const closeModal = () => {
+        if (modalOverlay) {
+            modalOverlay.classList.add('hidden');
+            modalOverlay.classList.remove('flex');
+        }
+    };
+
+    // Event listener untuk tombol "Add Item"
+    if (openModalBtn) {
+        openModalBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal();
+        });
+    }
+
+    // Event listener untuk tombol close (X) dan tombol Back
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+    if (backBtnModal) {
+        backBtnModal.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeModal();
+        });
+    }
+
+    // Event listener untuk menutup modal saat klik di luar (di overlay)
+    if (modalOverlay) {
+        modalOverlay.addEventListener('click', (e) => {
+            // Cek apakah yang diklik adalah overlay itu sendiri, bukan konten modalnya
+            if (e.target === modalOverlay) {
+                closeModal();
+            }
+        });
+    }
+});

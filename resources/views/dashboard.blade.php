@@ -98,10 +98,10 @@
                 class="border-4 border-black shadow-[8px_8px_0_#000] bg-[#ffffff] rounded-lg h-[200px] flex flex-col justify-center transition delay-75 duration-100 ease-in-out hover:-translate-y-3">
                 <a href="/mengelola-barang" class="flex h-full justify-center items-center p-4 gap-6">
                     <div class="text-black flex flex-col gap-10">
-                        <h4><span class="bg-[#a6ff00] inline py-1">Managing Goods</span> </h4>
+                        <h4><span class="bg-[#a6ff00] inline py-1">Managing <br> Goods</span> </h4>
                         <div class="flex">
                             <img src="/img/arrow-left-solid-full.svg" alt="" width="30px">
-                            <p class="text-sm/6">Manage Now</p>
+                            <p class="text-sm/6">Manage <br> Now</p>
                         </div>
                     </div>
                     <img src="/img/goods.png" alt="mengelola barang" width="80px">
@@ -111,7 +111,7 @@
                 class="border-4 flex flex-col justify-center border-black shadow-[8px_8px_0_#000] bg-[#a6ff00] rounded-lg transition delay-75 duration-100 ease-in-out hover:-translate-y-3">
                 <a href="/peminjaman-barang" class="flex justify-center h-full items-center p-4">
                     <div class="text-black flex flex-col gap-10">
-                        <h4><span class="bg-[#fff] inline py-1">Borrowing Goods</span></h4>
+                        <h4><span class="bg-[#fff] inline py-1">Borrowing <br> Goods</span></h4>
                         <div class="flex">
                             <img src="/img/arrow-left-solid-full.svg" alt="" width="30px">
                             <p class="text-sm/6">Borrow <br> Now</p>
@@ -124,7 +124,7 @@
                 class="border-4 flex flex-col h-[200px] justify-center shadow-[8px_8px_0_#000] border-black bg-[#a6ff00] rounded-lg transition delay-75 duration-100 ease-in-out hover:-translate-y-3">
                 <a href="/laporan-barang" class="flex justify-center items-center h-full p-4">
                     <div class="text-black flex flex-col gap-10">
-                        <h4><span class="bg-[#fff] inline py-1">Return of Goods</span></h4>
+                        <h4><span class="bg-[#fff] inline py-1">Return of <br> Goods</span></h4>
                         <div class="flex">
                             <img src="/img/arrow-left-solid-full.svg" alt="" width="30px">
                             <p class="text-sm/6">Return <br> Now</p>
@@ -137,10 +137,10 @@
                 class="border-4 border-black shadow-[8px_8px_0_#000] bg-[#ffffff] rounded-lg h-[200px] flex flex-col justify-center transition delay-75 duration-100 ease-in-out hover:-translate-y-3">
                 <a href="/mengelola-barang" class="flex h-full justify-center items-center p-4 gap-6">
                     <div class="text-black flex flex-col gap-10">
-                        <h4><span class="bg-[#a6ff00] inline py-1">Goods Report</span> </h4>
+                        <h4><span class="bg-[#a6ff00] inline py-1">Goods <br> Report</span> </h4>
                         <div class="flex">
                             <img src="/img/arrow-left-solid-full.svg" alt="" width="30px">
-                            <p class="text-sm/6">Report Now</p>
+                            <p class="text-sm/6">Report <br> Now</p>
                         </div>
                     </div>
                     <img src="/img/report.png" alt="mengelola barang" width="80px">
