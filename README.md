@@ -9,7 +9,6 @@ Proyek ini sudah menggunakan Vite untuk manajemen aset frontend (CSS/JS).
 
 - Autentikasi (Login & Register)
 - Manajemen Barang (Tambah, Edit, Hapus, Cari)
-- Manajemen Pengguna (Role Admin & User)
 - Kategori Barang
 - Laporan sederhana (stok & peminjaman)
 - UI dengan Tailwind CSS
